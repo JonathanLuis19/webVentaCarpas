@@ -1,0 +1,94 @@
+/*Up*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #555;
+  }
+  
+  .scroll-to-top span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+
+  /*whatsapp*/
+  .whatsapp-button {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    z-index: 9999;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #69bfb5;
+  }
+  
+/*Boton de Facebook e Instagram*/
+  .facebook-button,
+  .instagram-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    z-index: 9999;
+  }
+
+  .facebook-button {
+    bottom: 130px;
+    right: 20px;
+    background-color: #1877F2;
+  }
+
+  .instagram-button {
+    bottom: 190px;
+    right: 20px;
+    background-color: #E4405F;
+  }
+
+  .facebook-button:hover {
+    background-color: #b4c2e1;
+  }
+
+  .instagram-button:hover,
+  .instagram-button:active  {
+    background-color: #d68fb7;
+    color: #ab009a !important;
+  }
+  

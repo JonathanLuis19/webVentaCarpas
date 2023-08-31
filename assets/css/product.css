@@ -1,0 +1,13 @@
+.card-imgen {
+    object-fit: cover;
+    width: auto;
+    height: 400px;
+    background-color: #fff;
+  }
+  
+.card-imgen-carrusel{
+  object-fit: cover;
+  width: 100%;
+  height: 85px;
+  background-color: #fff;
+}

@@ -1,0 +1,195 @@
+.btn {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    border: none;
+    position: relative;
+    font-weight: bold !important;
+    background-color: transparent;
+    color: rgb(8, 0, 233);
+    transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0.6;
+    margin: 0 auto;
+    font-size: 14px !important;
+  }
+  
+  .btn::after {
+    content: '';
+    border-bottom: 3px double rgb(27, 18, 181);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    margin-top: -5px;
+    top: 0;
+    left: 5px;
+    visibility: hidden;
+    opacity: 1;
+    transition: .2s linear;
+  }
+  
+  .btn .icon {
+    transform: translateX(0%);
+    transition: .2s linear;
+    animation: attention 1.2s linear infinite;
+  }
+  
+  .btn:hover::after {
+    visibility: visible;
+    opacity: 0.7;
+    width: 90%;
+  }
+  
+  .btn:hover {
+    letter-spacing: 2px;
+    opacity: 1;
+    color: #c51487;
+  }
+  
+  .btn:hover > .icon {
+    transform: translateX(30%);
+    animation: none;
+  }
+  
+  @keyframes attention {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    50% {
+      transform: translateX(30%);
+    }
+  }
+  
+
+
+/*style boton redirect*/
+
+.button-redirect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border: solid 3px transparent;
+  background-clip: padding-box;
+  box-shadow: 0px 0px 0px 3px #ffffff00;
+  color: white !important;
+  padding: 3px 15px; 
+  min-height: 30px; 
+  width: 100%;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  transition: all .5s ease;
+  text-decoration: none; 
+}
+
+.button-redirect:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+.button-redirect:hover {
+  color: rgb(81, 205, 209);
+  box-shadow: 0px 0px 0px 3px #30a1b8;
+}
+
+.buttonredirectt svg {
+  width: 16px;
+}
+
+
+
+/*botones de index*/
+
+
+
+.container-boton-serv-prod{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Arial", sans-serif; 
+  text-shadow: 5px 1px 4px #fff;
+}
+
+@media (max-width: 767px) {
+  .container-boton-serv-prod {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
+.uiverse {
+  position: relative;
+  background: linear-gradient(320deg, rgb(129, 170, 208), rgb(32, 128, 212));
+  color: #2a03d8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(23, 23, 160, 0.314);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-decoration: none; 
+  text-align: center; 
+  line-height: 1; 
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(38, 119, 173, 0.418);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(243, 6, 6, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+  background: linear-gradient(320deg, rgb(6, 60, 111), rgb(148, 169, 245));
+  color: #ffffff;
+}

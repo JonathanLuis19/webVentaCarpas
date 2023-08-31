@@ -1,0 +1,89 @@
+.card-planes {
+    width: 100%;
+    max-width: 1800px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    gap: 5px;
+    overflow: visible;
+  }
+  
+  .card-planes .item {
+    border-radius: 10px;
+    width: 100%;
+    height: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item:hover {
+    transform: scale(0.95);
+    transition: all 0.3s;
+  }
+  
+  .item svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  
+   
+   .item--1 {
+    background: #c7c7ff;
+   }
+   
+   .item--2 {
+    background: #ffd8be;
+   }
+   
+   .item--3 {
+    background: #a9ecbf;
+   }
+   
+   .item--4 {
+    background: #f3bbe1;
+   }
+
+   .item--5 {
+    background: #c4bbf3;
+   }
+
+   .item--6 {
+    background: #e5f3bb;
+   }
+   
+   .quantity {
+    font-size: 25px;
+    font-weight: 600;
+   }
+   
+   .text {
+    text-align: center;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+   }
+
+   @media (max-width: 480px) {
+    .text {
+      font-size: 10px; 
+    }
+  }
+   
+   .text--1 {
+    color: rgb(0, 0, 0);
+   }
+   
+   .text--1:hover{
+    color: #1d3480;
+   }
+
+   .title-degradado-black-blue{
+    background: linear-gradient(to right, #000000, #9e7e18 50%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+  
+  }

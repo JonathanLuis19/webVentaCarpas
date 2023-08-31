@@ -1,0 +1,89 @@
+
+  /*Pagina de inicio*/
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    border: 2px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover; 
+  }
+  
+  @media (max-width: 768px) {
+
+    .video-container {
+      padding-bottom: 75%; /* Proporción 4:3 */
+    }
+  }
+  .img-service{
+    width: 500px !important;
+    height: 300px !important;
+  }
+
+/*-----*/
+
+.fondo-degradado-azul {
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+
+
+
+.img-pghome {
+  width: 100%;
+  height: 480px;
+
+  object-fit: fill;
+}
+
+/*imagen  pagina index servicios*/
+
+.img-pghome-servicios-productos {
+  position: relative;
+  background: black !important;
+  width: 100%;
+  height: 480px;
+  display: inline-block;
+
+}
+
+
+.img-pghome-servicios-productos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  background-color: rgba(0, 0, 0, 0.410);
+}
+
+@media (max-width: 768px) {
+  .img-pghome-servicios-productos {
+    position: relative;
+    background: initial !important;
+    width: auto;
+    height: auto;
+    display: inline;
+    padding: 0;
+  }
+
+  .img-pghome-servicios-productos::before {
+    content: none;
+  }
+}
+
+
